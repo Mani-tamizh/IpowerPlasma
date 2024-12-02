@@ -1,5 +1,5 @@
 import React, { lazy, Suspense } from 'react';
-import { HashRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 
 const HomeOne = lazy(() => import('./pages/HomeOne'));
 const About = lazy(() => import('./pages/About'));
@@ -13,7 +13,6 @@ const BlogPageTwoMain = lazy(()=>import ('./pages/BlogPageTwo'))
 const App = () => {
   return (
   <HashRouter>
-    <Router>
       <Suspense>
         <Routes>
           <Route path="/" element={<HomeOne />} />
@@ -28,7 +27,6 @@ const App = () => {
           <Route path="/blog/post2" element={<BlogPageTwoMain />} />
         </Routes>
       </Suspense>
-    </Router>
   </HashRouter>
   );
 };
