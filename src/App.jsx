@@ -1,14 +1,14 @@
 import { HashRouter, Route, Routes } from 'react-router-dom';
+import HomeOne from './pages/HomeOne';
+import About from './pages/About';
+import ServiceUs from './pages/Service';
+import Portfolio from './pages/Portfolio';
+import FAQMain from './pages/FAQ';
+import ContactUs from './components/ContactUs/ContactUs';
+import BlogParent from './components/Blog/Blog-parent';
+import BlogPageOneMain from './pages/BlogPageOne';
+import BlogPageTwoMain from './pages/BlogPageTwo';
 
-const HomeOne = lazy(() => import('./pages/HomeOne'));
-const About = lazy(() => import('./pages/About'));
-const ServiceUs = lazy(() => import('./pages/Service'));
-const Portfolio = lazy(() => import('./pages/Portfolio'));
-const FAQMain = lazy(() => import('./pages/FAQ'));
-const ContactUs = lazy(() => import('./components/ContactUs/ContactUs'));
-const BlogParent = lazy(() => import('./components/Blog/Blog-parent'));
-const BlogPageOneMain = lazy(()=>import ('./pages/BlogPageOne'))
-const BlogPageTwoMain = lazy(()=>import ('./pages/BlogPageTwo'))
 const App = () => {
   return (
   <HashRouter>
