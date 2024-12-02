@@ -1,5 +1,5 @@
 import React, { lazy, Suspense } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 
 const HomeOne = lazy(() => import('./pages/HomeOne'));
 const About = lazy(() => import('./pages/About'));
@@ -12,6 +12,7 @@ const BlogPageOneMain = lazy(()=>import ('./pages/BlogPageOne'))
 const BlogPageTwoMain = lazy(()=>import ('./pages/BlogPageTwo'))
 const App = () => {
   return (
+  <HashRouter>
     <Router>
       <Suspense>
         <Routes>
@@ -28,6 +29,7 @@ const App = () => {
         </Routes>
       </Suspense>
     </Router>
+  </HashRouter>
   );
 };
 
