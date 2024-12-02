@@ -1,0 +1,70 @@
+.service-slider {
+  margin: 40px 20px;
+  padding: 2rem;
+  background-color: rgb(242, 192, 20,0.2);
+  border-radius: 10px;
+}
+.service-slider h1{
+  font-size: 55px;
+  padding-bottom: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bolder;
+  font-family: "Poppins", sans-serif;
+}
+.service-slide {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.service-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+.service-card:hover .service-content
+{
+  background-color: #f2c014;
+}
+
+.service-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover .service-image {
+  transform: scale(1.05);
+  background-color: #f2c014;
+  background-blend-mode: color-dodge;
+}
+
+.service-content {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.service-content h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.service-content p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
+

@@ -1,0 +1,26 @@
+.blog-list {
+  text-align: center;
+  padding: 20px;
+}
+.blog-list h1{
+  
+  font-size: 12px;
+  display: block;
+  font-weight: 600;
+  color: #2e9ca1;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.section-title {
+  font-size: 28px;
+  font-weight: 600;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+.blog-cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}

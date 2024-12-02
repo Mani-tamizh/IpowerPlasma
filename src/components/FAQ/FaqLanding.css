@@ -1,0 +1,24 @@
+.Faqlanding
+{
+    height: 400px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    background-blend-mode: color-burn;
+    background-repeat: no-repeat;
+    background-position: center/center;
+    background-size: cover;
+    display: flex;
+    padding-left: 100px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(https://metaliq-wordpress.technowebstore.com/wp-content/uploads/2024/05/sub-banner1.png);
+}
+.Faqlanding h1{
+    
+    text-align: start; 
+    padding: 30px 0;
+    font-size: 40px;
+    font-weight: 600;
+    color: whitesmoke;
+}

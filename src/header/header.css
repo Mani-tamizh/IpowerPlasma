@@ -1,0 +1,134 @@
+/* Basic header styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000000;
+  height: 80px;
+  width: 100%;
+  background-color: whitesmoke;
+  color:black;
+}
+.btn-quote {
+  padding: 15px 30px;
+  border: none;
+  background-color: #ce9233;
+  color: whitesmoke;
+  position: relative;
+  transition: 0.5s ease;
+  overflow: hidden; /* To ensure that the animated element doesn't overflow */
+}
+.btn-quote:hover{
+  background-color: #212529;
+}
+.mobile-menu
+{
+  display: none;
+}
+.logo {
+  font-size: 1.8rem;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  font-family: "Poppins", sans-serif;
+  color: black;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+  font-stretch:extra-expanded;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+.nav-links a:hover{
+  color: #ce9233;
+}
+
+.toggle-btn {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Media queries for tablets and mobiles */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;  /* Hide the full nav on tablets and mobile */
+  }
+
+  .toggle-btn {
+    display: block; /* Show the toggle button */
+    order: 3;
+  }
+
+  /* Mobile menu (overlay) */
+  .mobile-menu {
+    
+    display: block;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    overflow-x:hidden;
+    height: 100vh;
+    width: 100vw;
+    background-color: #ce9233;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 2rem;
+    z-index: 10;
+  }
+
+  .mobile-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .mobile-menu li {
+    margin: 1.5rem 0;
+  }
+
+  .mobile-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+  .nav-links {
+    display: none;  /* Hide the full nav on tablets and mobile */
+  }
+
+  .toggle-btn {
+    display: block; /* Show the toggle button */
+  }
+
+  .mobile-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .mobile-menu li {
+    margin: 1.5rem 0;
+  }
+
+  .mobile-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+
+}

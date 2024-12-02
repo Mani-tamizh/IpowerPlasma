@@ -1,0 +1,155 @@
+/* ServiceCards.css */
+
+/* Background styling for the parallax effect */
+/* Background styling for the parallax effect */
+/* .service-parent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    position: relative;
+    background-image: url('https://amandagabbardbeauty.com/c/img/about-1.jpg');
+    background-size: cover; 
+    background-attachment: fixed; 
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 30vh; 
+    z-index: 1;
+    overflow: hidden;
+} */
+.service-parent
+{
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.service-head h1{
+    font: size 4rem;
+    font-weight: 300;
+    position: relative;
+}
+.service-head h1::after{ 
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    display: block;
+    background: none repeat scroll 0 0 transparent;
+    height: 2px;
+    width: 50px;
+    transform:translateY(-50%);
+    background: goldenrod;
+    transition: width 0.5s ease 0.3s, left 0.5s ease 0.3s;
+  }
+  
+  .service-parent:hover .service-head h1::after { 
+    width: 100%; 
+    left: 0;
+  }
+
+
+.service-cards-container {
+    display: flex;
+    gap: 0px; /* Space between cards */
+    padding: 40px;
+    width: 100%;
+    max-width: 1400px; /* Adjust to fit your layout */
+    margin: 0 auto; /* Center the container */
+}
+
+.service-card {
+    position: relative;
+    width: 100%; /* Adjust based on how many cards you have */
+    padding-top: 35.25%; /* Aspect ratio for images */
+    background-size: cover;
+    background-position: center/center;
+    overflow: hidden;
+ /* Border similar to the one in your design */
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    background-color: rgba(229, 184, 11, 0.5);
+    background-blend-mode: color-burn;/* Zoom effect on hover */
+    overflow: hidden;
+}
+.service-border
+{
+    border: 3px solid rgba(255, 255, 255, 0.4);
+    padding: 100px 25px;
+    border-radius: 2px;
+}
+.service-card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.2); /* Overlay to make the text readable */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.service-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.quote-button {
+    background-color: #daa520;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.quote-button:hover {
+    background-color: #c18c17; /* Darken the button on hover */
+}
+@media(max-width:992px)
+{
+    .service-cards-container {
+        flex-direction: column;
+        gap: 10px; 
+    }
+    .service-card { /* Adjust based on how many cards you have */
+        padding-top: 100.25%; /* Aspect ratio for images */
+    }
+    .service-border
+    {
+        padding: 20px 25px;
+    }
+    .service-card-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: rgba(0, 0, 0, 0.2); /* Overlay to make the text readable */
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+    .service-head{
+        text-align: center;
+    }
+    
+}

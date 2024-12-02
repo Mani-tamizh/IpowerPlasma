@@ -1,0 +1,43 @@
+{
+  "moreLinks": [
+    {
+      "title": "Home",
+      "path": "/home"
+    },
+    {
+      "title": "About",
+      "path": "/about"
+    },
+    {
+      "title": "Services",
+      "path": "/services"
+    },
+    {
+      "title": "Contact",
+      "path": "/contact"
+    }
+  ],
+  "popularStores": [
+    {
+      "title": "FAQ",
+      "path": "/faq"
+    },
+    {
+      "title": "Portfolio",
+      "path": "/portfolio"
+    },
+    {
+      "title": "Store Three",
+      "path": "/store-three"
+    },
+    {
+      "title": "Store Four",
+      "path": "/store-four"
+    }
+  ],
+  "subscriptionText": {
+    "heading": "Subscribe to our newsletter",
+    "description": "Sign up for our weekly email newsletter with the best money saving coupons."
+  },
+  "footerBottom": "Copyright 2022 © All Rights Reserved."
+}

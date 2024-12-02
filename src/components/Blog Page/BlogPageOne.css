@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* For Chrome, Safari, and Edge */
+::-webkit-scrollbar {
+  width: 5px; /* Width of the scrollbar */
+  height: 5px; /* Height of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Background of the scrollbar track */
+  border-radius: 10px; /* Rounded corners for track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cfa355; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners for thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b58a27; /* Color of the thumb when hovered */
+}
+
+.blogone-parent {
+    margin: 50px 0;
+    display: flex;
+    position: relative;
+    gap: 20px; /* Space between the main content and the sidebar */
+    flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+}
+
+.blogone-content {
+    flex: 3; /* Main content takes more space */
+}
+
+.sidebar {
+    flex: 1; /* Sidebar takes less space */
+}
+
+/* Headings styling */
+.blogone-parent h1, h2 {
+    font-size: 16px;
+    text-align: center;
+}
+
+.calen {
+    height: 14px;
+}
+
+.blogone {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blogone img {
+    background-color: rgba(255, 255, 0, 0.3);
+    background-blend-mode: color-burn;
+    max-width: 100%; /* Ensure the image is responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.blogone-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.b-content-1 {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.b-content-1 h1 {
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.b-content-1 p {
+    font-size: 17px;
+    padding-bottom: 20px;
+}
+
+.sidebar {
+    width: 100%; /* Full width by default */
+    max-width: 450px; /* Ensures a consistent width */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    position: sticky;
+    top: 20px; /* Keeps sidebar at the top */
+}
+
+/* Search bar styles */
+.search-bar {
+    margin-bottom: 20px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Categories and Recent Posts styles */
+.categories h3, .recent-posts h3 {
+    border-bottom: 2px solid #cfa355;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #cfa355;
+}
+
+.categories ul {
+    list-style: none;
+    padding: 0;
+}
+
+.categories li {
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+}
+
+.recent-posts .post-item {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.recent-posts .post-item img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+
+.recent-posts .post-item p {
+    font-size: 14px;
+    color: #333;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .sidebar {
+        display: none; /* Hide sidebar on smaller screens */
+    }
+
+    .blogone {
+        padding: 0;
+        width: 100%;
+        flex-direction: column; /* Stack content vertically */
+    }
+
+    .blogone-content {
+        width: 100%; /* Full width */
+    }
+
+    .b-content-1 {
+        width: 90%; /* Adjusted width for mobile */
+    }
+
+    .blogone-parent {
+        flex-direction: column; /* Stack content vertically */
+        width: 100%;
+        overflow: hidden;
+    }.blog-head
+    {
+      padding: 20px;
+    }
+    .b-content-1{
+      margin: 20px 0;
+    }
+}
+
+@media (max-width: 726px) {
+    .b-content-1 h1 {
+        font-size: 18px; /* Smaller heading font size */
+    }
+
+    .b-content-1 p {
+        font-size: 15px; /* Smaller paragraph font size */
+    }
+
+    .blog-parent {
+        margin: 20px 0; /* Reduce margin for small screens */
+    }
+}
+@media (max-width: 576px) {
+  .blog-head
+  {
+    padding: 20px;
+  }
+  .b-content-1 h1 {
+      font-size: 18px; /* Smaller heading font size */
+  }
+
+  .b-content-1 p {
+      font-size: 15px; /* Smaller paragraph font size */
+  }
+
+  .blog-parent {
+      margin: 20px 0; /* Reduce margin for small screens */
+  }
+}

@@ -1,0 +1,28 @@
+[
+    {
+      "id": 1,
+      "question": "What materials can you plasma cut?",
+      "answer": "Suspendisse ipsum elit, hendrerit id eleifend at, condimentum et mauris. Curabitur et libero vel arcu dignissim pulvinar ut ac leo. In sit amet orci et erat accumsan interdum."
+    },
+    {
+      "id": 2,
+      "question": "What is the maximum thickness of metal you can cut?",
+      "answer": "Suspendisse ipsum elit, hendrerit id eleifend at, condimentum et mauris. Curabitur et libero vel arcu dignissim pulvinar ut ac leo. In sit amet orci et erat accumsan interdum."
+    },
+    {
+      "id": 3,
+      "question": "How long does it take to complete a project?",
+      "answer": "Suspendisse ipsum elit, hendrerit id eleifend at, condimentum et mauris. Curabitur et libero vel arcu dignissim pulvinar ut ac leo. In sit amet orci et erat accumsan interdum."
+    },
+    {
+      "id": 4,
+      "question": "Do you offer design assistance?",
+      "answer": "Suspendisse ipsum elit, hendrerit id eleifend at, condimentum et mauris. Curabitur et libero vel arcu dignissim pulvinar ut ac leo. In sit amet orci et erat accumsan interdum."
+    },
+    {
+      "id": 5,
+      "question": "Can you handle bulk orders?",
+      "answer": "Suspendisse ipsum elit, hendrerit id eleifend at, condimentum et mauris. Curabitur et libero vel arcu dignissim pulvinar ut ac leo. In sit amet orci et erat accumsan interdum."
+    }
+  ]
+  

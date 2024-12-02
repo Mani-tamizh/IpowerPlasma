@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*
+{
+  font-family: "Poppins", sans-serif;
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+.testimonials-wrap {
+    padding: 40px 0;
+}
+.heading-section {
+    text-align: center;
+}
+.sub-heading {
+    font-size: 12px;
+    display: block;
+    font-weight: 600;
+    color: #2e9ca1;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.heading-section h2 {
+    font-size: 28px;
+    font-weight: 600;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+.testimonial-box {
+    display: flex;
+    position: relative;
+    padding: 30px 20px;
+    gap: 20px;
+    background: #fff;
+    border: 1px solid rgba(0,0,0,.03);
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .08);
+}
+.user-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: relative;
+    min-width: 80px;
+    background-size: 100%;
+}
+.carousel-testimonial .item {
+    padding: 30px 10px;
+}
+.quote {
+    position: absolute;
+    top: -23px;
+    color: #2e9da1;
+    font-size: 27px;
+}
+.name {
+    margin-bottom: 0;
+    line-height: 14px;
+    font-size: 17px;
+    font-weight: 500;
+}
+.position {
+    color: #adadad;
+    font-size: 14px;
+}
+.carousel-testimonial .slick-prev, 
+.carousel-testimonial .slick-next {
+    font-size: 0;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.carousel-testimonial .slick-prev:before, 
+.carousel-testimonial .slick-next:before {
+    font-size: 25px;
+    color: #2e9ca1;
+}
+.carousel-testimonial .slick-dots li button:before {
+    font-size: 12px;
+    color: #2e9ca1;
+}
+.carousel-testimonial .slick-dots li.slick-active button:before {
+    opacity: 0.75;
+    color: #2e9ca1;
+}
+.user-img
+{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+@media (max-width:992px)
+{
+    
+.testimonials-wrap {
+    padding: 40px 30px;
+}
+}
