@@ -1,4 +1,3 @@
-import React, { lazy, Suspense } from 'react';
 import { HashRouter, Route, Routes } from 'react-router-dom';
 
 const HomeOne = lazy(() => import('./pages/HomeOne'));
@@ -13,7 +12,6 @@ const BlogPageTwoMain = lazy(()=>import ('./pages/BlogPageTwo'))
 const App = () => {
   return (
   <HashRouter>
-      <Suspense>
         <Routes>
           <Route path="/" element={<HomeOne />} />
           <Route path="/home" element={<HomeOne />} />
@@ -26,7 +24,6 @@ const App = () => {
           <Route path="/blog/:id" element={<BlogPageOneMain />} />
           <Route path="/blog/post2" element={<BlogPageTwoMain />} />
         </Routes>
-      </Suspense>
   </HashRouter>
   );
 };
